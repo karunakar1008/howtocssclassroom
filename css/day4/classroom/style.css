@@ -1,0 +1,84 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media(min-width:600px) {
+    /* This css would apply only when the screen size is minimum 600px */
+
+    .profile {
+        width: 600px;
+        margin: 60px auto;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .user-img {
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 14px;
+        transition: .1s;
+    }
+
+    .user-img:hover {
+        border-radius: 50%;
+        width: 240px;
+        height: 240px;
+        transform: rotate(12deg);
+        margin-left: 30px;
+    }
+
+    /* aspect ratio of the image will change automatically 
+    when you set one property (height or width) other property will change automatically 
+    */
+    .btn {
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px 20px;
+        transition: 1s;
+    }
+
+    .btn:hover {
+        color: black;
+        background-color: white;
+    }
+
+    .profile-title {
+        margin-top: 0px;
+    }
+}
+
+@media(max-width:599px) {
+    .profile {
+        margin: 60px auto;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .user-img {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    /* aspect ratio of the image will change automatically 
+    when you set one property (height or width) other property will change automatically 
+    */
+    .btn {
+        background-color: black;
+        color: red;
+        border: none;
+        border-radius: 5px;
+        padding: 16px 30px;
+        border-radius: 80px;
+        font-size: 16px;
+    }
+
+    .profile-title {
+        margin-top: 24px;
+    }
+}
