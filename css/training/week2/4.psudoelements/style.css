@@ -1,0 +1,197 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.img1 {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.bg {
+    height: 480px;
+    width: 800px;
+    background-image: url('bedroom.avif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content h1{
+    font-size: 40px;
+}
+.content p{
+    font-size: 20px;
+}
+
+.filter{
+    height: 290px;
+    /* filter: brightness(120%); */
+     /* filter: contrast(60%) */
+     /* filter: grayscale(60%); */
+     /* filter: invert(80%); */
+     /* filter: sepia(90%); */
+     /* filter: opacity(90%); */
+     /* filter: hue-rotate(190deg); */
+     filter: blur(1px);
+     filter: brightness(70%) sepia(80%);
+}
+
+.demo{
+    width: 300px;
+    padding: 10px;
+    border-radius: 12px;
+
+    color: white;
+    background-color: blueviolet;
+
+    /* margin: 80px 30px; */
+
+    /* transform: scale(.8); */
+    /* transform: scale(1.8); */
+    /* transform: rotate(30deg); */
+    /* transform: rotate(-30deg); */
+    /* transform: skew(30deg); */
+    transform: translate(50px,80px);
+
+}
+
+.demo1{
+    width: 300px;
+    padding: 10px;
+    border-radius: 12px;
+
+    color: white;
+    background-color: orangered;
+
+    /* margin: 30px auto; */
+    /* transform: scale(.8); */
+    /* transform: scale(1.8); */
+    /* transform: rotate(30deg); */
+    /* transform: rotate(-30deg); */
+    /* transform: skew(30deg); */
+}
+
+/* pseudo elements
+    ::first-line
+    ::first-letter
+    ::selection
+    ::before
+    ::after
+*/
+
+h1::first-line{
+    color: red;
+}
+h1::first-letter{
+    font-size: 70px;
+    color: blue;
+}
+h1::selection{
+    background-color: blueviolet;
+    color: white;
+}
+
+/* pseudo classes
+    hover
+    focus
+    active
+    first-child
+    last-child
+    nth-child
+    not
+*/
+
+.filter:hover{
+    filter: blur(0);
+    cursor: pointer;
+    width: 500px;
+    object-fit: cover;
+}
+
+h1:hover{
+    color: rgb(137, 0, 137);
+}
+
+input{
+    width: 300px;
+    padding: 16px ;
+    font-size: 16px;
+    border:1px solid lightgray;
+    border-radius: 12px;
+}
+
+input:focus{
+    outline:none;
+    border:1px solid rgb(72, 27, 234);
+}
+
+button:active{
+    background-color: red;
+    color: white;
+    border: none;
+     border:1px solid rgb(72, 27, 234);
+}
+
+/* button:hover{
+   border: none;
+    border:1px solid rgb(72, 27, 234);
+    background-color: black;
+    color: white;
+} */
+
+p:first-child{
+    color: red;
+}
+p:last-child{
+    color: green !important;
+}
+
+p:nth-child(2n){
+    color: blue;
+}
+
+
+
+.test{
+    /* background-color: green; */
+    width: fit-content;
+}
+
+ .test::before{
+    /* content: "😐"; */
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right:  0;
+}
+
+ .test::after{
+    content: "😒";
+    /* height: 2px;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0; */
+} 
+.test-parent{
+    /* width: fit-content; */
+    width: 400px;
+    position: relative;
+}
