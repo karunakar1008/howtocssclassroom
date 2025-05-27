@@ -26,8 +26,8 @@
     margin  => space outside the border
 */
   .box {
-    border: 1px solid lightgray;
     width: 300px;
+    border: 1px solid lightgray;
     padding: 10px;
     margin: 60px auto;
     border-radius: 14px;
@@ -58,9 +58,9 @@
   .login {
     width: 340px;
     margin: 120px auto;
-   /* border: 5px solid red;
+    /* border: 5px solid red;
    padding: 16px; */
-   text-align: center;
+    text-align: center;
   }
 
   .input {
@@ -83,7 +83,8 @@
     color: white;
 
 
-  } 
+  }
+
   .logo {
     height: 45px;
   }

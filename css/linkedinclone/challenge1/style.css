@@ -1,0 +1,145 @@
+body {
+    background-color: #F4F2EE;
+}
+
+main {
+    width: 70%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: auto;
+}
+
+.mid-pan {
+    width: 650px;
+}
+
+.profile {
+    height: auto;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.image-content {
+    display: flex;
+    gap: 20px;
+}
+
+.image-content img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.start-post {
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    padding: 15px;
+    width: 100%;
+}
+
+.buttons-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 0px 20px;
+}
+
+.buttons-content button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+    gap: 10px;
+}
+
+
+.right-pan {
+    width: 450px;
+}
+
+.news-container {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    padding: 0px 10px;
+}
+
+.news-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-stories {
+    font-size: 20px;
+    font-weight: 500px;
+    color: gray;
+}
+
+.top-stories-content {
+    list-style: none;
+    padding-left: 0;
+    color: black;
+}
+
+.top-stories-content li {
+    padding: 5px 0px;
+}
+
+.top-stories-content li a {
+    color: black;
+    text-decoration: none;
+}
+
+.top-stories-content li:hover {
+    background-color: #bdbdbc;
+}
+
+.top-stories-content h4 {
+    margin: 5px 0px;
+}
+
+.left-pan {
+    width: 450px;
+}
+.user-wallpaper{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.user{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+.user-profile{
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    position: relative;
+}
+.skills-container{
+    padding: 10px;
+}
+.profile-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.profile-veified{
+    margin-top: 10px;
+}
+
+.user-post{
+    margin-top: 10px;
+}
